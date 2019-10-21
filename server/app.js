@@ -16,6 +16,7 @@ app.get('/hello', function(req, res) {
 });
 
 io.on('connection', function(socket) {
+
   console.log('Alguien se ha conectado con Sockets');
   socket.emit('messages', messages);
 
@@ -26,6 +27,6 @@ io.on('connection', function(socket) {
   });
 });
 
-server.listen(80,'https://socketudc.herokuapp.com' ,function() {
+server.listen(8080, function() {
     console.log("Servidor corriendo en http://localhost:8080");
   });
