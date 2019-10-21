@@ -26,6 +26,6 @@ io.on('connection', function(socket) {
   });
 });
 
-server.listen(8080, function() {
+server.listen(80,'https://socketudc.herokuapp.com' ,function() {
     console.log("Servidor corriendo en http://localhost:8080");
   });
